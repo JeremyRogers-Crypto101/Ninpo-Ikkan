@@ -1,0 +1,21 @@
+// Reversed Number.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+void main() {
+//Reversing Number
+
+	int number, reversedNumber = 0;//54321
+		cout << "Please enter a number to be reversed\n";
+		cin >> number;
+
+		while (number != 0) {
+			reversedNumber *= 10;
+			reversedNumber += number % 10;
+			number /= 10;
+		}
+			cout << "Reversed Number is: " << reversedNumber<<endl;
+
+			system("pause");
